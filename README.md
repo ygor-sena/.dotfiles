@@ -36,3 +36,6 @@ dotfiles push
 
 About Git bare repository:
 - [The best way to store your dotfiles: A bare Git repository \*\*EXPLAINED\*\*](https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/) by Gabrielle Young
+
+- About WSL settings:
+  - [Sharing Windows fonts with WSL](https://x410.dev/cookbook/wsl/sharing-windows-fonts-with-wsl/) by [x410.dev](https://x410.dev/cookbook/wsl/sharing-windows-fonts-with-wsl/)
