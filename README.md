@@ -2,7 +2,7 @@
 
 This repository contains my file configurations for Windows+WSL2+Emacs desktop environment among other settings. Commands to replicate it are provided.
 
-This configuration was provided by [Siiwyn](https://github.com/Siilwyn), which is a reference to [this article](https://www.atlassian.com/git/tutorials/dotfiles) and [this discussion forum](https://news.ycombinator.com/item?id=11071754) about how to set up, track and replicate your dotfiles among other devices.
+This configuration was provided by [Siiwyn](https://github.com/Siilwyn), which is a reference to [this article](https://www.atlassian.com/git/tutorials/dotfiles) and [this discussion forum](https://news.ycombinator.com/item?id=11071754) about how to set up, track and replicate your dotfiles among other devices. You must change the repository name and links to yours.
 
 ### Setup
 ```sh
