@@ -98,7 +98,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages emacs zsh-autosuggestions web-search jsontools z zsh-history-substring-search)
+plugins=(git sudo colored-man-pages copyfile \
+	zsh-autosuggestions web-search jsontools z zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -131,14 +132,19 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Fix dconf-WARNING failing to commit changes when using Emacs
-export $(dbus-launch)
-
 # Add alias to .dotfiles repository on GitHub
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Add asdf script
 . "$HOME/.asdf/asdf.sh"
-setxkbmap -model abnt2 -layout br -variant abnt2
 . "$HOME/.asdf/completions/asdf.bash"
+
+# Add Syntax Highlighting to oh-my-zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fix dconf-WARNING failing to commit changes when using Emacs
+export $(dbus-launch)
+
+# Fix problem of ABNT-2 layout not being recognized by Wayland/Emacs
+setxkbmap -model abnt2 -layout br -variant abnt2
+export WAYLAND_DISPLAY="wayland-1"
